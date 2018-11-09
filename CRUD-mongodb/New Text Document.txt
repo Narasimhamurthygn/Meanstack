@@ -1,0 +1,13 @@
+ //data base setup path(.exe filepath) is setup in advance sytem sttings in that add the path 
+ C:\Program Files\MongoDB\Server\4.0\bin
+
+ mongod -dbpath="C:\Narasimha\mongodb\data"   //in terminal-1(expressjs)
+ mongod.exe --dbpath C:\Narasimha\mongodb\data
+
+ mongo                                       // in terminal-2(mongodb) 
+ MongoDB Enterprise > db                    //in terminal-2(mongodb) 
+ use MyDb                                  //in terminal-2(mongodb) 
+db
+db.tutorials.insert({topic:"MongoDB", description: "No Sql Database"});  //creating databsase
+db.tutorials.find();
+db.tutorials.find().pretty();
